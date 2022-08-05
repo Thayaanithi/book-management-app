@@ -1,11 +1,18 @@
 package com.example.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 public class Member {
@@ -29,8 +36,7 @@ public class Member {
 
 	@Column(unique = true)
 	@NotNull
-	@Max(10)
-	public String getUserName() {
+		public String getUserName() {
 		return userName;
 	}
 
@@ -78,7 +84,11 @@ public class Member {
 	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
 	}
-
+	@OneToMany (mappedBy = "member", fetch = FetchType.EAGER)
+	@OnDelete(action = OnDeleteAction.CASCADE)
+	private List<Book> book;
+	
+	
 	public Member(long id, String userName, String password, String name, String address, String email,
 			String contactNo) {
 		super();
@@ -93,7 +103,9 @@ public class Member {
 
 	public Member() {
 		super();
-
+		// TODO Auto-generated constructor stub
 	}
+
+	
 
 }
