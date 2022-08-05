@@ -46,14 +46,8 @@ Member delete
 Member correct password 
 <img src = https://github.com/Thayaanithi/book-management-app/blob/main/Asset/correctpassword.png>
 
-
-Book update
-<imag src = https://github.com/Thayaanithi/book-management-app/blob/main/Asset/book_update.png>
-
-
-Book read 
-<img src = https://github.com/Thayaanithi/book-management-app/blob/main/Asset/book_read.png>
-
+Book List
+<img src = https://github.com/Thayaanithi/book-management-app/blob/main/Asset/book-read.png>
 
 Testing
 
