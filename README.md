@@ -2,8 +2,8 @@
 
 #### By Thaya
 
-<br*
-###& Introduction*
+<br>
+### *Introduction*
 <br>
 ## This is a Book  Management app I made for my project. As I am a physical book reader, I planned to do a book management app as my final project for the bootcamp. This app useful to libraries, schools and universities.
 <br>
